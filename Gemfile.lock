@@ -147,6 +147,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-darwin-20
 
 DEPENDENCIES
   active_model_serializers
@@ -158,4 +159,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   2.2.16
+   2.3.4
