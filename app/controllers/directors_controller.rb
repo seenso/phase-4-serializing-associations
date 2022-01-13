@@ -3,12 +3,13 @@ class DirectorsController < ApplicationController
 
   def index
     directors = Director.all
-    render json: directors
+    render json: directors, include: ['movies', 'movies.reviews']
+    # w the include: we are saying that when we render json data for directors, include info on the movies associated w the director and the reviews reviews associated w those movies.
   end
 
   def show
     director = Director.find(params[:id])
-    render json: director
+    render json: director, include: ['movies', 'movies.reviews']
   end
 
   private
